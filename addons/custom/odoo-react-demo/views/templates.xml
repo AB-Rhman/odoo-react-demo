@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="react_page" name="React demo page">
+    <!-- This template will be rendered by the controller /react_demo route -->
+    <t t-call="web.layout">
+      <div id="react-root">
+        <!-- We'll load our built index.html inside an iframe or inject the built index content here. -->
+        <iframe src="/web/static/src/dist/index.html" style="border:0;width:100%;height:800px;"></iframe>
+      </div>
+    </t>
+  </template>
+  <template id="react_demo_template" inherit_id="website.layout" name="React Demo">
+    <xpath expr="//main" position="replace">
+      <div id="react-app"></div>
+    </xpath>
+  </template>
+</odoo>
