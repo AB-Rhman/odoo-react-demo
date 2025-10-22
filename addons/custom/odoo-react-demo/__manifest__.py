@@ -6,7 +6,7 @@
     'summary': 'Integrates a React frontend with Odoo',
     'description': 'This module serves a React app built with Vite directly through Odoo.',
     'author': 'Your Name',
-    'depends': ['base', 'web'],
+    'depends': ['base', 'web', 'website'],
     'data': [
         'views/templates.xml',
     ],
