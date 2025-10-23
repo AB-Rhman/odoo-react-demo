@@ -60,7 +60,7 @@ services:
       - odoo-python-packages:/usr/local/lib/python3.11/site-packages
       - ./odoo.conf:/etc/odoo/odoo.conf
     restart: always
-    command: ["bash", "-c", "/usr/local/bin/prepare_addons.sh && odoo -c /etc/odoo/odoo.conf"]
+    command: ["bash", "-c", "bash /usr/local/bin/prepare_addons.sh && odoo -c /etc/odoo/odoo.conf"]
 
   nginx:
     image: nginx:1.27-alpine
