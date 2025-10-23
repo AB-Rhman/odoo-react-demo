@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-  <template id="assets_frontend" inherit_id="web.assets_frontend" name="odoo_react_demo assets">
-    <xpath expr="." position="inside">
-      <!-- If you build React into static/dist, you can include its JS/CSS files here.
-           Alternatively, the index.html in static/dist will reference bundled assets. -->
-    </xpath>
-  </template>
-</odoo>
