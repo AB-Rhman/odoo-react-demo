@@ -9,14 +9,22 @@ function App() {
       <header>
         <h1>React Demo</h1>
         <p>A tiny React + Vite + TypeScript app</p>
+        <div className="toolbar">
+          <button
+            className="btn-secondary"
+            onClick={() => (window.location.href = '/react_redirect/disable')}
+          >
+            Back to Odoo
+          </button>
+        </div>
       </header>
 
       <main>
-        <button onClick={() => setCount((c) => c + 1)}>
+  <button onClick={() => setCount((c: number) => c + 1)}>
           You clicked {count} time{count === 1 ? '' : 's'}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR.
+          Edit <code>src/App.tsx</code> and save to test HMRR.
         </p>
         <ul>
           <li>Fast dev server (Vite)</li>

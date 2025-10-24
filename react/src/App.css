@@ -1,5 +1,5 @@
 :root {
-  --bg: #0b1020;
+  --bg: #344066;
   --panel: #121a33;
   --text: #e9eefb;
   --accent: #5cc8ff;
@@ -19,6 +19,12 @@ body {
   padding: 2rem;
 }
 header { margin-bottom: 1.5rem; }
+header .toolbar { float: right; }
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--accent);
+}
 button {
   background: var(--accent);
   color: #00111f;
