@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<templates xml:space="preserve">
-  <t t-name="odoo_react_redirect.ReactSystray">
-    <button class="btn btn-secondary o_react_systray" t-on-click="onClick" title="Open React App">
-      React
-    </button>
-  </t>
-</templates>

@@ -4,18 +4,29 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const goBackToOdoo = async () => {
+    // Try to clear any Home Action if the redirect module is installed.
+    // If the route doesn't exist (module removed), just go to /web.
+    try {
+      await fetch('/react_redirect/disable', {
+        method: 'GET',
+        credentials: 'include',
+        redirect: 'manual',
+      })
+    } catch (_) {
+      // ignore
+    } finally {
+      window.location.href = '/web'
+    }
+  }
+
   return (
     <div className="app">
       <header>
         <h1>React Demo</h1>
         <p>A tiny React + Vite + TypeScript app</p>
         <div className="toolbar">
-          <button
-            className="btn-secondary"
-            onClick={() => (window.location.href = '/react_redirect/disable')}
-          >
-            Back to Odoo
-          </button>
+          <button className="btn-secondary" onClick={goBackToOdoo}>Back to Odoo</button>
         </div>
       </header>
 

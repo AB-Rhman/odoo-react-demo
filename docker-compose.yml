@@ -50,7 +50,6 @@ services:
       - USER=odoo
       - PASSWORD=odoo
       - PIP_BREAK_SYSTEM_PACKAGES=1
-      - MODULE_NAME=odoo-react-demo
     volumes:
       - ./addons/custom:/mnt/extra-addons/custom
       - ./addons/enterprise:/mnt/extra-addons/enterprise
